@@ -13,3 +13,12 @@ git commit -m "Texto"			Añade un comentario a la modificacion que se añadio en
 git remote rename local servidorlocal	Renombra un servidor local, en este caso ya estamos en un servidor, y se renombra a servidorlocal.
 
 
+Git Online comandos
+echo "# alura-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dealvarador/alura-git.git
+git push -u origin main
+
