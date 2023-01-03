@@ -1,0 +1,15 @@
+Comandos GitHub
+
+cd .. 							Volver a carpeta anterior
+git status 						El estado actual del directorio.
+ls								Muestra el directorio.
+git remote  					muestra el servidor
+git cd sitio/ 					Lleva al directorio del trabajo. en este caso a la carpeta sitio.
+git log -p				 		Obtiene el log completo de lo que se ha modificado.
+git push servidorlocal master	Envia los datos modificados a al servidor local
+git pull servidorlocal master	Obtiene los datos que se fueron enviados al servidor local 
+git add index.html				Añade un archivo al repositorio, en este caso llamado index.html.
+git commit -m "Texto"			Añade un comentario a la modificacion que se añadio en comando "git add"
+git remote rename local servidorlocal	Renombra un servidor local, en este caso ya estamos en un servidor, y se renombra a servidorlocal.
+
+
