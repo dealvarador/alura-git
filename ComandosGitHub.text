@@ -11,6 +11,12 @@ git pull servidorlocal master	Obtiene los datos que se fueron enviados al servid
 git add index.html				Añade un archivo al repositorio, en este caso llamado index.html.
 git commit -m "Texto"			Añade un comentario a la modificacion que se añadio en comando "git add"
 git remote rename local servidorlocal	Renombra un servidor local, en este caso ya estamos en un servidor, y se renombra a servidorlocal.
+git branch						Retorna las ramificaciones del pryecto.
+git branch titulo				crea una ramificacion llamada titulo.
+git checkout titulo				Empieza a utilizar la rama titulo
+git checkout -b lista			crea una rama y cambia a esta rama para usarla, en este caso lista
+git merge titulo				UNE LOS TRABAJOS que se estaban haciend en la Rama titulo con la Rama principal, es decir master.
+
 
 
 Git Online comandos
@@ -27,5 +33,5 @@ git push -u origin main
 push an existing repository from the command line
 git remote add origin https://github.com/dealvarador/alura-git.git 		Agrega un origen externo.
 git branch -M main
-git push -u origin main
+git push -u origin main 												-u cada vez que haceos git push siempre va a ir a origin
 
