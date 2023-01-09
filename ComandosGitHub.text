@@ -4,18 +4,34 @@ cd .. 							Volver a carpeta anterior
 git status 						El estado actual del directorio.
 ls								Muestra el directorio.
 git remote  					muestra el servidor
+git remote -v
 git cd sitio/ 					Lleva al directorio del trabajo. en este caso a la carpeta sitio.
 git log -p				 		Obtiene el log completo de lo que se ha modificado.
 git push servidorlocal master	Envia los datos modificados a al servidor local
+git push origin master		    envia los datos al servidor online.
 git pull servidorlocal master	Obtiene los datos que se fueron enviados al servidor local 
 git add index.html				Añade un archivo al repositorio, en este caso llamado index.html.
 git commit -m "Texto"			Añade un comentario a la modificacion que se añadio en comando "git add"
 git remote rename local servidorlocal	Renombra un servidor local, en este caso ya estamos en un servidor, y se renombra a servidorlocal.
+git remote rename -v			Muestra los servidores que poseo tanto local como externos.
 git branch						Retorna las ramificaciones del pryecto.
 git branch titulo				crea una ramificacion llamada titulo.
 git checkout titulo				Empieza a utilizar la rama titulo
 git checkout -b lista			crea una rama y cambia a esta rama para usarla, en este caso lista
 git merge titulo				UNE LOS TRABAJOS que se estaban haciend en la Rama titulo con la Rama principal, es decir master.
+git stash						Guarda modificaciones que aun no queremos añadir y que las revisaremos luego.
+git stash lista					Obtiene la lista de stash que tenemos pendientes.
+git stash pop					aplica el ultimo elemento de la lista de stash pendientes.
+git checkout 142514sa			viaja hacia el pasado en las modificaciones que hemos hecho.
+git checkout -b nuevabranch		crea una nueva rama en el punto donde regresamos para hacer nuevos commits.
+git diff 2f7066f..2f7066f		muestra las modificacionnes que han habido desde una seccion hasta otra.	
+git tag 						para ver las versiones que es tan guardadas.
+git tag	-a						para hacer un release.
+git tag -a v0.1.0 -m "Lanzando 
+la primera versio BETA de la 
+app de curos"					Aca se guarda la primera version.
+git push servidorlocal v0.1.0	Envia la version(tag) al servidor local.
+
 
 
 
